@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zackson BM Bâtiment & Design : dessin de plans d'étude, idées de villas et visualisation 3D.">
+  <title>Zackson BM | Bâtiment & Design</title>
+  <style>
+    :root{--gold:#f3b51b;--dark:#101114;--ink:#202126;--muted:#666b75;--cream:#f7f5ef}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1100px,92%);margin:auto}
+    header{background:var(--dark);color:white;border-bottom:3px solid var(--gold)}
+    nav{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:18px 0;flex-wrap:wrap}
+    .brand{font-weight:900;letter-spacing:1px;font-size:1.05rem}.brand span{color:var(--gold)}
+    .navlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:.92rem}
+    .hero{background:linear-gradient(115deg,rgba(12,13,16,.97),rgba(12,13,16,.82)),linear-gradient(45deg,#272a30,#111);color:white;padding:78px 0 70px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:35px}
+    .eyebrow{color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.8rem}
+    h1{font-size:clamp(2.2rem,5vw,4.2rem);line-height:1.05;margin:14px 0}
+    h1 span{color:var(--gold)}
+    .hero p{max-width:600px;color:#e4e4e7;font-size:1.08rem}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:7px;font-weight:700}
+    .primary{background:var(--gold);color:#171717}.secondary{border:1px solid #85858b;color:white}
+    .blueprint{border:1px solid #55565d;border-radius:16px;padding:25px;background:repeating-linear-gradient(0deg,transparent,transparent 24px,rgba(243,181,27,.12) 25px),repeating-linear-gradient(90deg,#191a1e,#191a1e 24px,#28292d 25px);min-height:245px;display:flex;align-items:center;justify-content:center}
+    .house-icon{font-size:6rem;color:var(--gold);text-shadow:0 0 28px #f3b51b44}
+    section{padding:60px 0}
+    .section-title{text-align:center;margin:0 0 10px;font-size:2rem}
+    .section-intro{text-align:center;color:var(--muted);max-width:680px;margin:0 auto 30px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{border:1px solid #e5e5e5;border-radius:12px;padding:23px;background:white;box-shadow:0 8px 22px #00000008}
+    .card .icon{font-size:1.8rem}.card h3{margin:10px 0 6px}.card p{margin:0;color:var(--muted)}
+    .about{background:var(--cream)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+    .about-panel{background:var(--dark);color:white;border-radius:14px;padding:28px;border-left:5px solid var(--gold)}
+    .about-panel strong{color:var(--gold)}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .step{padding:18px;border-radius:10px;background:#fafafa;border:1px solid #ececec}
+    .num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--gold);font-weight:900}
+    .contact{background:var(--dark);color:white;text-align:center}
+    .contact p{color:#d6d6d9;max-width:650px;margin:10px auto 22px}
+    footer{background:#08090b;color:#bcbcc2;padding:18px 0;text-align:center;font-size:.85rem}
+    .notice{font-size:.85rem;color:#6d7078;margin-top:20px}
+    @media(max-width:760px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero{padding:55px 0}.blueprint{min-height:150px}.cards,.steps{grid-template-columns:1fr}.navlinks{gap:12px}.section-title{font-size:1.7rem}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#accueil">ZACKSON BM <span>•</span> BÂTIMENT & DESIGN</a>
+      <div class="navlinks">
+        <a href="#services">Services</a><a href="#apropos">À propos</a><a href="#methode">Méthode</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="accueil">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Vos idées prennent forme</div>
+        <h1>Imaginons votre future <span>maison.</span></h1>
+        <p>Des idées de villas, des plans d’étude et des visualisations pour vous aider à mieux présenter votre projet de logement.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#contact">Parler de mon projet</a>
+          <a class="btn secondary" href="#services">Découvrir les services</a>
+        </div>
+      </div>
+      <div class="blueprint" aria-label="Illustration de maison et de plans"><div class="house-icon">⌂</div></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2 class="section-title">Nos services</h2>
+      <p class="section-intro">Une présentation claire et créative de vos idées, du premier croquis à la visualisation.</p>
+      <div class="cards">
+        <article class="card"><div class="icon">📐</div><h3>Dessin de plans d’étude</h3><p>Organisation des pièces, dimensions indicatives et mise en page de plans pour discuter de votre projet.</p></article>
+        <article class="card"><div class="icon">🏡</div><h3>Idées de villas</h3><p>Propositions d’aménagement pour chambres, salon, cuisine, sanitaires et terrasse.</p></article>
+        <article class="card"><div class="icon">🧊</div><h3>Visualisation 3D</h3><p>Images de présentation pour mieux imaginer l’apparence et l’organisation d’un logement.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="apropos">
+    <div class="wrap about-grid">
+      <div>
+        <div class="eyebrow">À propos</div>
+        <h2>La créativité au service de vos idées.</h2>
+        <p>Zackson BM Bâtiment & Design développe des propositions visuelles et des plans d’étude avec une approche simple, attentive et créative.</p>
+        <p>Chaque projet commence par l’écoute de vos besoins, de votre espace et de votre budget.</p>
+      </div>
+      <div class="about-panel">
+        <h3>Notre engagement</h3>
+        <p><strong>Écouter.</strong> Comprendre les besoins et les priorités.</p>
+        <p><strong>Imaginer.</strong> Organiser les espaces de façon claire.</p>
+        <p><strong>Présenter.</strong> Vous aider à expliquer votre projet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="methode">
+    <div class="wrap">
+      <h2 class="section-title">Comment ça marche ?</h2>
+      <p class="section-intro">Un processus simple pour commencer à préparer votre idée.</p>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h3>Décrivez votre idée</h3><p>Nombre de chambres, dimensions du terrain et pièces souhaitées.</p></div>
+        <div class="step"><div class="num">2</div><h3>Étudions l’espace</h3><p>Préparez une première proposition visuelle à discuter et à améliorer.</p></div>
+        <div class="step"><div class="num">3</div><h3>Faites vérifier</h3><p>Avant toute construction, faites vérifier et valider les plans par les professionnels qualifiés compétents.</p></div>
+      </div>
+      <p class="notice">Important : ce site présente des services de dessin d’étude et de visualisation. Il ne prétend pas remplacer un architecte ou un ingénieur. Les plans de construction, la structure et les autorisations doivent être traités avec les professionnels qualifiés requis par la réglementation locale.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="eyebrow">Contact</div>
+      <h2 class="section-title">Parlons de votre projet</h2>
+      <p>Vous avez une idée de maison ou de villa ? Contactez-nous pour expliquer votre besoin et préparer les prochaines étapes.</p>
+      <div class="buttons" style="justify-content:center">
+        <a class="btn primary" href="https://wa.me/" target="_blank" rel="noopener">Ajouter mon WhatsApp</a>
+        <a class="btn secondary" href="https://www.facebook.com/" target="_blank" rel="noopener">Page Facebook</a>
+      </div>
+      <p class="notice">À personnaliser : remplacez les liens ci-dessus par votre numéro WhatsApp et l’adresse de votre page Facebook.</p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© <span id="year">2026</span> Zackson BM Bâtiment & Design — Vos idées prennent forme.</div></footer>
+</body>
+</html>
